@@ -64,6 +64,9 @@ loss.backward()
 print(loss)
 optimizer.step()
 
+output = my_nn(xt).squeeze()
+loss = loss_fn(output, yt)
+
 loss.backward()
 print(loss)
 
