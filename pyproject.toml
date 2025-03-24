@@ -1,3 +1,9 @@
+[tool.poetry]
+name = "kaggle_backpack"
+version = "0.1.0"
+description = "Creating firstkaggle submission"
+authors = ["Daniel"]
+
 [project]
 name = "backpack"
 version = "0.1.0"
