@@ -57,13 +57,15 @@ my_nn = mynn()
 optimizer = optim.Adam(my_nn.parameters(), lr=0.01)
 output = my_nn(xt).squeeze()
 
+# forward pass
 loss_fn = nn.MSELoss()
 loss = loss_fn(output, yt)
-
+# backward pass
 loss.backward()
 print(loss)
 optimizer.step()
 
+# forward pass
 output = my_nn(xt).squeeze()
 loss = loss_fn(output, yt)
 
