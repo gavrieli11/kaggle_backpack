@@ -3,6 +3,7 @@ name = "kaggle_backpack"
 version = "0.1.0"
 description = "Creating firstkaggle submission"
 authors = ["Daniel"]
+package-mode = false
 
 [project]
 name = "backpack"
